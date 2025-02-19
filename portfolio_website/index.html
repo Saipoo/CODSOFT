@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>A Poorna Seshaseyan</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Poorna<span>Portfolio</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Resume</a></li>
@@ -20,46 +20,68 @@
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am an advanced-level software developer passionate about creating practical solutions. I have experience in Python, JavaScript, HTML, CSS, and more.</p>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm A Poorna Seshaseyan</h1>
+      <p>A passionate Web Developer crafting engaging digital experiences.</p>
+      <a href="#contact" class="btn">Let's Connect</a>
+    </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>JavaScript</li>
-      <li>HTML & CSS</li>
-      <li>ReactJS</li>
-      <li>SQL & PHP</li>
-      <li>Node.js</li>
-    </ul>
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><span>HTML & CSS</span><div class="progress"><div class="progress-bar" style="width: 95%;"></div></div></div>
+      <div class="skill"><span>JavaScript</span><div class="progress"><div class="progress-bar" style="width: 90%;"></div></div></div>
+      <div class="skill"><span>ReactJS</span><div class="progress"><div class="progress-bar" style="width: 85%;"></div></div></div>
+      <div class="skill"><span>Python</span><div class="progress"><div class="progress-bar" style="width: 80%;"></div></div></div>
+      <div class="skill"><span>SQL & PHP</span><div class="progress"><div class="progress-bar" style="width: 75%;"></div></div></div>
+    </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><a href="https://sites.google.com/view/ai-chatbotsample/home" target="_blank">AI Chatbot</a></li>
-      <li><a href="https://saipoo.github.io/snake_game/" target="_blank">Snake Game</a></li>
-      <li>Menu Driven Chatbot</li>
-      <li>AI Telegram Bot</li>
-    </ul>
+    <div class="project-grid">
+      <div class="project">
+        <img src="https://source.unsplash.com/400x250/?chatbot" alt="AI Chatbot">
+        <h3>AI Chatbot</h3>
+        <p>An AI-powered chatbot delivering instant information using natural language processing.</p>
+        <a href="https://sites.google.com/view/ai-chatbotsample/home" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="project">
+        <img src="https://source.unsplash.com/400x250/?game" alt="Snake Game">
+        <h3>Snake Game</h3>
+        <p>A classic snake game recreated with modern design and responsive controls.</p>
+        <a href="https://saipoo.github.io/snake_game/" target="_blank" class="btn">Play Game</a>
+      </div>
+      <div class="project">
+        <img src="https://source.unsplash.com/400x250/?security" alt="Menu Driven Chatbot">
+        <h3>Menu Driven Chatbot</h3>
+        <p>A versatile chatbot offering games, calculations, and user-friendly interactions.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="resume">
+  <section id="resume" class="resume">
     <h2>Resume</h2>
-    <a href="A_POORNA_SESHASEYAN_Resume.pdf" download>Download My Resume</a>
+    <p>Download my resume to explore my journey in detail.</p>
+    <a href="A_POORNA_SESHASEYAN_Resume.pdf" download class="btn">Download Resume</a>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:poornaseshaseyanaraja@gmail.com">poornaseshaseyanaraja@gmail.com</a></p>
-    <p>Phone: +91 6364037478</p>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <p>© 2025 A Poorna Seshaseyan. All Rights Reserved.</p>
+    <p>© 2025 A Poorna Seshaseyan | Designed with ❤️ and dedication.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

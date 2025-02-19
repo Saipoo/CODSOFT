@@ -3,54 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Amazing Landing Page | A Poorna Seshaseyan</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Welcome to My Landing Page</h1>
-      <ul>
+  <header class="hero-section">
+    <nav class="navbar">
+      <div class="logo">Poorna<span>Designs</span></div>
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <section id="home" class="hero-content">
+      <h1>Welcome to My World of Creativity</h1>
+      <p>Crafting vibrant web experiences with passion and purpose.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </section>
   </header>
 
-  <section id="home" class="hero">
-    <h2>Build Your Dreams Here</h2>
-    <p>Your one-stop solution to amazing projects!</p>
-    <a href="#contact" class="btn">Get Started</a>
-  </section>
-
-  <section id="features">
-    <h2>Features</h2>
+  <section id="features" class="features">
+    <h2>Why Choose Me?</h2>
     <div class="feature-grid">
-      <div class="feature">🚀 Fast Performance</div>
-      <div class="feature">📱 Mobile Responsive</div>
-      <div class="feature">🔒 Secure & Reliable</div>
+      <div class="feature-item">
+        <img src="https://source.unsplash.com/300x200/?coding" alt="Fast Development">
+        <h3>Fast Development</h3>
+        <p>Quick and efficient project deliveries without compromising quality.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://source.unsplash.com/300x200/?responsive" alt="Responsive Design">
+        <h3>Responsive Design</h3>
+        <p>Websites that look amazing on all devices — phones, tablets, and desktops.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://source.unsplash.com/300x200/?security" alt="Secure Solutions">
+        <h3>Secure Solutions</h3>
+        <p>Your website's security is my top priority, ensuring safe user experiences.</p>
+      </div>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>This landing page demonstrates clean design, responsiveness, and interactive elements.</p>
+  <section id="about" class="about">
+    <div class="about-content">
+      <img src="https://source.unsplash.com/400x400/?developer" alt="About Me">
+      <div class="text">
+        <h2>About Me</h2>
+        <p>Hi! I'm <strong>A Poorna Seshaseyan</strong>, a passionate web developer dedicated to creating stunning websites with a perfect blend of functionality and design.</p>
+        <p>Whether it's a personal blog or a complex web application, I focus on delivering solutions that resonate with users and provide exceptional experiences.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
+  <section id="contact" class="contact">
+    <h2>Let's Connect!</h2>
+    <form class="contact-form">
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
       <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+      <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 A Poorna Seshaseyan | All Rights Reserved.</p>
+    <p>© 2025 A Poorna Seshaseyan | All Rights Reserved</p>
   </footer>
 
   <script src="script.js"></script>
